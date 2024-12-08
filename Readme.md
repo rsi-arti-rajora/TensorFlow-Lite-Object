@@ -18,12 +18,17 @@ cd C:\tflite1
 conda create --name tflite1-env python=3.9
 conda activate tflite1-env
 pip install tensorflow opencv-python protobuf==3.20.*
+tar -xf custom_model_lite.zip
+
 ```
 
 # `Running TensorFlow Lite Models`
 **Webcam Detection**
+To run object detection with webcam, use the following command:
+
 python TFLite_detection_webcam.py --modeldir=TFLite_model
 
 **Video Detection**
 To run object detection on a video file, use the following command:
+
 python TFLite_detection_video.py --modeldir=TFLite_model
